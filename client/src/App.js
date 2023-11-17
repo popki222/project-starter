@@ -8,6 +8,20 @@ import AboutUsPage from "./pages/AboutUsPage";
 import "./App.css";
 
 function Navigation(props) {
+  async function handleClick() {
+    try {
+      const response = await fetch('http://localhost:8080/api/ebay-api', {method: "post"});
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log('Response from backend:', data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark shadow mb-3">
       <div className="container-fluid">
@@ -24,6 +38,11 @@ function Navigation(props) {
             <NavLink className="nav-link" to="/about-us">
               About Us
             </NavLink>
+          </li>
+          <li className="nav-item">
+            <button className="btn btn-primary" onClick={handleClick}>
+              Trigger eBay API
+            </button>
           </li>
         </ul>
       </div>

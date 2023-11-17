@@ -4,7 +4,18 @@ const path = require("path");
 const db = require("./models");
 const app = express();
 const PORT = process.env.PORT;
+const cors = require("cors")
 
+
+//use cors
+app.use(
+  cors({
+    origin: "http://localhost:3000", // Replace with your frontend URL
+    methods: ["GET", "POST"], // Add other methods you might use
+    allowedHeaders: ["Content-Type", "Authorization"], // Add other allowed headers
+    credentials: true, // Allow sending cookies
+  })
+);
 // this lets us parse 'application/json' content in http requests
 app.use(express.json());
 
