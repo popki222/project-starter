@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 // must update the token in 3 places: staticBody, authorization, and IAF-TOKEN
-//next step I will try to pass the item title fromm an input on the frontend into the staticBody const in this file.
+//next step I will try to pass the item title fromm an input on the frontend into the staticBody const in this file. j
 
 // form.js has cors issue, pressing button from app.js creates the listing but the title is literally "${formData.title}" , this is because formData is in Form.js not ebay-api.. I think i should pass formData to ebay-api if possible. A better solution might be trying to fix the cors issue on form.js cause it shouldnt be an issue if its calling ebay-api properly.
 const axios = require('axios');
