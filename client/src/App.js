@@ -4,6 +4,7 @@ import PostsListPage from "./pages/PostsListPage";
 import PostFormPage from "./pages/PostFormPage";
 import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import Form from "./components/Form"
 
 import "./App.css";
 
@@ -54,6 +55,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navigation />
+      <Form />
       <div className="container-xl text-center">
         <div className="row justify-content-center">
           <Routes>
