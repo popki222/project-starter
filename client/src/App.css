@@ -1,1 +1,33 @@
-/* Add custom CSS here */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Optional: Set the height of the container */
+  }
+  
+  .centered-form {
+    width: 100px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column; /* Display children vertically */
+    align-items: center;
+  }
+  .hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .my-form input,
+  .my-form select,
+  .my-form textarea,
+  .my-form button {
+   margin-bottom: 15px;
+   border-radius: 5px; /* Adjust as needed */
+  }
+  /* Add other styling for your form elements as needed */
+  .my-form {
+
+    /* Your form element styles */
+  }
+  

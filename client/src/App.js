@@ -27,9 +27,9 @@ function Navigation(props) {
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark shadow mb-3">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Micro Blog
+          MasterLister
         </Link>
-        <ul className="navbar-nav me-auto">
+        {/* <ul className="navbar-nav me-auto">
           <li className="nav-item">
             <NavLink className="nav-link" to="/posts/new">
               Create a Micro Post
@@ -45,7 +45,7 @@ function Navigation(props) {
               Trigger eBay API
             </button>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );
